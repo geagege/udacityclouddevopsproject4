@@ -17,4 +17,4 @@ kubectl get po
 # Forward the container port to a host
 kubectl apply -f ./kubernetes/service.yml
 kubectl get svc
-# kubectl port-forward svc/project4 8000:80
+kubectl port-forward svc/project4 8000:80

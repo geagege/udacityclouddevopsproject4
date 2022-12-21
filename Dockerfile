@@ -6,6 +6,9 @@ WORKDIR /app
 ## Step 2:
 # Copy source code to working directory
 COPY .  /app
+RUN echo "" > output_txt_files/docker_out.txt
+RUN echo "" > output_txt_files/kubernetes_out.txt
+
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
